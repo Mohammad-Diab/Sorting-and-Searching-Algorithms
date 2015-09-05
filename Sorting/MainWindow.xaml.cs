@@ -519,6 +519,26 @@ namespace Sorting
                 this.FlowDirection = FlowDirection.RightToLeft;
         }
 
+        private void Sort_Click(object sender, RoutedEventArgs e)
+        {
+            if (A.Length > 0)
+            {
+                if (SaveFiles) Write(Labels[32]);
+                var list = A.ToList();
+                long m1 = DateTime.Now.Ticks;
+                list.Sort();
+                long m2 = DateTime.Now.Ticks;
+                A = list.ToArray();
+                long m = m2 - m1;
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                if (SaveFiles) Write(Labels[31]);
+                if (ViewNumber) viewNumber(true);
+                BSflag = true;
+            }
+            else
+                MessageBox.Show(Labels[28], Labels[10], MessageBoxButton.OK, MessageBoxImage.Stop);
+        }
+
         private void Help_Click(object sender, RoutedEventArgs e)
         {
             try
