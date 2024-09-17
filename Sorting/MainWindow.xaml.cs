@@ -254,8 +254,10 @@ namespace Sorting
                 try
                 {
                     BSflag = false;
-                    int.TryParse(textBox3.Text, out n);
-                    A = new int[n];
+                    int count;
+                    int.TryParse(textBox3.Text, out count);
+                    A = new int[count];
+                    n = count;
                     Thread t1 = new Thread(Rand1);
                     Thread t2 = new Thread(Rand2);
                     Thread t3 = new Thread(Rand3);
@@ -269,12 +271,13 @@ namespace Sorting
                     MessageBox.Show(Labels[33], Labels[2], MessageBoxButton.OK, MessageBoxImage.Information);
                     if (ViewNumber) viewNumber(true);
                 }
+                catch (OutOfMemoryException)
+                {
+                    MessageBox.Show("Out of Memory.", Labels[2], MessageBoxButton.OK, MessageBoxImage.Error);
+                }
                 catch (Exception ex)
                 {
-                    if (ex.Message.Equals("Exception of type 'System.OutOfMemoryException' was thrown."))
-                        MessageBox.Show("Out of Memory.", Labels[2], MessageBoxButton.OK, MessageBoxImage.Error);
-                    else
-                        MessageBox.Show(ex.Message, Labels[2], MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(ex.Message, Labels[2], MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
