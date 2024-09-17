@@ -29,8 +29,8 @@ namespace Sorting
         bool BSflag = false;
         public static bool SaveFiles = false;
         bool ViewNumber = false;
-        public static string[] ArLabels = { "خوارزميات الترتيب والبحث", "عدد الأرقام", "توليد أرقام عشوائية", "مجال الأرقام من (", ") حتى (", ")", "خوارزميات الترتيب", "خوارزميات البحث", "بحث عن:", "ترتيب بالاختيار", "ترتيب بالفقاعات", "ترتيب بالاقحام", "ترتيب بالدمج", "فرز سريع", "بحث خطي", "بحث ثنائي", "عرض الأعداد", "خيارات", "شرح البرنامج", "عن", "خيارات", "حفظ الأعداد المرتبة وغير المرتبة الى القرص الصلب.", "مجال الأعداد:", "من:", "الى:", "اللغة:", "حفظ", "الغاء", "لم تقم بتوليد أي رقم بعد!", "تم العمل خلال '", "' ميلي ثانية", "حفظ الارقام المرتبة", "حفظ الارقام الغير مرتبة", "تم", "مستند نصي ", "مربع البحث فارغ", "وجد في '", "' خلال '", "الرقم غير موجود\nزمن البحث '", "أولا يجب ترتيب الأعداد باحدى خوارزميات الترتيب", "عدد الارقام يجب ألا يتجاوز 2147483647", "عدد الارقام يجب أن يكون أكبر من 4", "البداية يجب ألا يتجاوز 2147483646", "رقم النهاية يجب ألا يتجاوز 2147483647", "البداية يجب أن يكون أكبر من 0", "النهاية يجب أن يكون أكبر من 1", "البداية يجب ان تكون أقل من النهاية", "تم الترتيب","الافتراضي", "ملف الشرح Help.ppsx غير موجود بجانب البرنامج", "مربع البحث يجب أن يحتوي رقماً صحيحاً" };
-        public static string[] EnLabels = { "Sorting & Searching Algorithms ", "Numbers count ", "Generate Random Number ", "Numbers' domain from ( ", ") to ( ", ") ", "Sorting Algorithms ", "Searching Algorithms ", "Look for ", "Selection Sort ", "Bubble Sort ", "Insertion Sort ", "Merge Sort ", "Quick Sort ", "Linear Search ", "Binary Search ", "View Numbers ", "Setting ", "Help ", "about ", "Setting ", "Save numbers to your disk. ", "Numbers' domain: ", "From: ", "To: ", "Language: ", "Save ", "Cancel ", "You haven't generated any number yet! ", "Done in ' ", "' Millisecond ", "Save Sorted Numbers ", "Save Unsorted Numbers ", "Done ", "Text documents  ", "Search box is empty! ", "Found in ' ", "' in ' ", "Number not found\ntime ' ", "Number must be sorted before binary searching ", "Numbers mustn't be more than 2147483647 ", "Numbers mustn't be less than 4 ", "First number mustn't be more than 2147483646 ", "Last number mustn't be more than 2147483647 ", "First number mustn't be less than 0 ", "Last number mustn't be less than 1 ", "Last number must be greater than the first one ", "Sorted ", "Default", "Help.ppsx wasn't found next to the program ", "Search box must contain a whole number " };
+        public static string[] ArLabels = { "خوارزميات الترتيب والبحث", "عدد الأرقام", "توليد أرقام عشوائية", "مجال الأرقام من (", ") حتى (", ")", "خوارزميات الترتيب", "خوارزميات البحث", "بحث عن:", "ترتيب بالاختيار", "ترتيب بالفقاعات", "ترتيب بالاقحام", "ترتيب بالدمج", "فرز سريع", "بحث خطي", "بحث ثنائي", "عرض الأعداد", "خيارات", "شرح البرنامج", "عن", "خيارات", "حفظ الأعداد المرتبة وغير المرتبة الى القرص الصلب.", "مجال الأعداد:", "من:", "الى:", "اللغة:", "حفظ", "الغاء", "لم تقم بتوليد أي رقم بعد!", "تم العمل خلال '", "' ميلي ثانية", "حفظ الارقام المرتبة", "حفظ الارقام الغير مرتبة", "تم", "مستند نصي ", "مربع البحث فارغ", "وجد في '", "' خلال '", "الرقم غير موجود\nزمن البحث '", "أولا يجب ترتيب الأعداد باحدى خوارزميات الترتيب", "عدد الارقام يجب ألا يتجاوز 2147483647", "عدد الارقام يجب أن يكون أكبر من 4", "البداية يجب ألا يتجاوز 2147483646", "رقم النهاية يجب ألا يتجاوز 2147483647", "البداية يجب أن يكون أكبر من 0", "النهاية يجب أن يكون أكبر من 1", "البداية يجب ان تكون أقل من النهاية", "تم الترتيب","الافتراضي", "ملف الشرح Help.ppsx غير موجود بجانب البرنامج", "مربع البحث يجب أن يحتوي رقماً صحيحاً", "جاري التوليد..." };
+        public static string[] EnLabels = { "Sorting & Searching Algorithms ", "Numbers count ", "Generate Random Number ", "Numbers' domain from ( ", ") to ( ", ") ", "Sorting Algorithms ", "Searching Algorithms ", "Look for ", "Selection Sort ", "Bubble Sort ", "Insertion Sort ", "Merge Sort ", "Quick Sort ", "Linear Search ", "Binary Search ", "View Numbers ", "Setting ", "Help ", "about ", "Setting ", "Save numbers to your disk. ", "Numbers' domain: ", "From: ", "To: ", "Language: ", "Save ", "Cancel ", "You haven't generated any number yet! ", "Done in ' ", "' Millisecond ", "Save Sorted Numbers ", "Save Unsorted Numbers ", "Done ", "Text documents  ", "Search box is empty! ", "Found in ' ", "' in ' ", "Number not found\ntime ' ", "Number must be sorted before binary searching ", "Numbers mustn't be more than 2147483647 ", "Numbers mustn't be less than 4 ", "First number mustn't be more than 2147483646 ", "Last number mustn't be more than 2147483647 ", "First number mustn't be less than 0 ", "Last number mustn't be less than 1 ", "Last number must be greater than the first one ", "Sorted ", "Default", "Help.ppsx wasn't found next to the program ", "Search box must contain a whole number ", "Generating... " };
         public static string[] Labels;
         public MainWindow()
         {
@@ -258,18 +258,10 @@ namespace Sorting
                     int.TryParse(textBox3.Text, out count);
                     A = new int[count];
                     n = count;
-                    Thread t1 = new Thread(Rand1);
-                    Thread t2 = new Thread(Rand2);
-                    Thread t3 = new Thread(Rand3);
-                    t1.Start();
-                    t2.Start();
-                    t3.Start();
-                    Rand4();
-                    t1.Join();
-                    t2.Join();
-                    t3.Join();
-                    MessageBox.Show(Labels[33], Labels[2], MessageBoxButton.OK, MessageBoxImage.Information);
-                    if (ViewNumber) viewNumber(true);
+                    Generating(true);
+                    Thread t = new Thread(Generate);
+                    t.IsBackground = true;
+                    t.Start();
                 }
                 catch (OutOfMemoryException)
                 {
@@ -277,8 +269,55 @@ namespace Sorting
                 }
                 catch (Exception ex)
                 {
+                    Generating(false);
                     MessageBox.Show(ex.Message, Labels[2], MessageBoxButton.OK, MessageBoxImage.Error);
                 }
+            }
+        }
+
+        private void Generate()
+        {
+            Thread t1 = new Thread(Rand1);
+            Thread t2 = new Thread(Rand2);
+            Thread t3 = new Thread(Rand3);
+            t1.IsBackground = true;
+            t2.IsBackground = true;
+            t3.IsBackground = true;
+            t1.Start();
+            t2.Start();
+            t3.Start();
+            Rand4();
+            t1.Join();
+            t2.Join();
+            t3.Join();
+            Dispatcher.BeginInvoke(new Action(Generated));
+        }
+
+        private void Generated()
+        {
+            Generating(false);
+            MessageBox.Show(Labels[33], Labels[2], MessageBoxButton.OK, MessageBoxImage.Information);
+            if (ViewNumber) viewNumber(true);
+        }
+
+        private void Generating(bool flag)
+        {
+            Random.IsEnabled = !flag;
+            textBox3.IsEnabled = !flag;
+            GroupBox1.IsEnabled = !flag;
+            GroupBox2.IsEnabled = !flag;
+            button.IsEnabled = !flag;
+            View_Number.IsEnabled = !flag;
+            Setting.IsEnabled = !flag;
+            if (flag)
+            {
+                Random.Content = Labels[51];
+                this.Cursor = Cursors.AppStarting;
+            }
+            else
+            {
+                Random.Content = Labels[2];
+                this.Cursor = null;
             }
         }
 
