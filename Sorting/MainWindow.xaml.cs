@@ -93,7 +93,7 @@ namespace Sorting
                 for (int i = 0; (i < n) && flag; i++)
                 {
                     flag = false;
-                    for (int j = 0; j < n - 1; j++)
+                    for (int j = 0; j < n - 1 - i; j++)
                         if (A[j] > A[j + 1])
                         {
                             Swap(A, j, j + 1);
