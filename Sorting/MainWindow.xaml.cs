@@ -554,7 +554,7 @@ namespace Sorting
                 BSflag = true;
             }
             else
-                MessageBox.Show(Labels[28], Labels[10], MessageBoxButton.OK, MessageBoxImage.Stop);
+                MessageBox.Show(Labels[28], button.Content.ToString(), MessageBoxButton.OK, MessageBoxImage.Stop);
         }
 
         private void Help_Click(object sender, RoutedEventArgs e)
