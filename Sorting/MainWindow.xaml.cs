@@ -262,6 +262,9 @@ namespace Sorting
                     t2.Start();
                     t3.Start();
                     Rand4();
+                    t1.Join();
+                    t2.Join();
+                    t3.Join();
                     MessageBox.Show(Labels[33], Labels[2], MessageBoxButton.OK, MessageBoxImage.Information);
                     if (ViewNumber) viewNumber(true);
                 }
