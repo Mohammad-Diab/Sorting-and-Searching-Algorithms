@@ -462,12 +462,11 @@ namespace Sorting
 
         void viewNumber(bool flag)
         {
-            Numbers_List.Items.Clear();
+            Numbers_List.ItemsSource = null;
             if (flag && A.Length > 0)
             {
                 Numbers_List.Visibility = Visibility.Visible;
-                foreach (int i in A)
-                    Numbers_List.Items.Add(i);
+                Numbers_List.ItemsSource = A;
                 this.Width = 470;
             }
             else
