@@ -280,30 +280,44 @@ namespace Sorting
 
         private void Quick_Sort(int[] A, int left, int right)
         {
-            int pivot;
-            if (right > left)
+            int lower, upper;
+            while (right > left)
             {
-                pivot = Partition(A, left, right);
-                Quick_Sort(A, left, pivot - 1);
-                Quick_Sort(A, pivot + 1, right);
+                Partition(A, left, right, out lower, out upper);
+                if (lower - left < right - upper)
+                {
+                    Quick_Sort(A, left, lower - 1);
+                    left = upper + 1;
+                }
+                else
+                {
+                    Quick_Sort(A, upper + 1, right);
+                    right = lower - 1;
+                }
             }
         }
 
-        private int Partition(int[] A, int left, int right)
+        private void Partition(int[] A, int left, int right, out int lower, out int upper)
         {
-            int x, swapPos;
             int pivotPos = left + (right - left) / 2;
-            Swap(A, left, pivotPos);
-            swapPos = left + 1;
-            for (int i = swapPos; i <= right; i++)
-                if (A[i] < A[left])
+            int x = A[pivotPos];
+            int i = left;
+            lower = left;
+            upper = right;
+            while (i <= upper)
+                if (A[i] < x)
                 {
-                    Swap(A, i, swapPos);
-                    swapPos++;
+                    Swap(A, i, lower);
+                    lower++;
+                    i++;
                 }
-            x = A[left];
-            A[left] = A[swapPos - 1]; A[swapPos - 1] = x;
-            return swapPos - 1;
+                else if (A[i] > x)
+                {
+                    Swap(A, i, upper);
+                    upper--;
+                }
+                else
+                    i++;
         }
 
         private void Quick_Click(object sender, RoutedEventArgs e)
