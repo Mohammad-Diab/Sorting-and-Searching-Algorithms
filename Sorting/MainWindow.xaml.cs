@@ -208,7 +208,7 @@ namespace Sorting
             Random rand = new Random((Int32)DateTime.Now.Ticks);
             for (int i = 0; i < (n / 4); i++)
             {
-                tmp = rand.Next((Int32)first, (Int32)last);
+                tmp = (Int32)(first + (long)(rand.NextDouble() * (last - first + 1)));
                 A[i] = tmp;
             }
         }
@@ -219,7 +219,7 @@ namespace Sorting
             Random rand = new Random((Int32)(DateTime.Now.Ticks + 100000));
             for (int i = (n / 4); i < (n / 2); i++)
             {
-                tmp = rand.Next((Int32)first, (Int32)last);
+                tmp = (Int32)(first + (long)(rand.NextDouble() * (last - first + 1)));
                 A[i] = tmp;
             }
         }
@@ -230,7 +230,7 @@ namespace Sorting
             Random rand = new Random((Int32)(DateTime.Now.Ticks + 9990000));
             for (int i = (n / 2); i < ((3 * n) / 4); i++)
             {
-                tmp = rand.Next((Int32)first, (Int32)last);
+                tmp = (Int32)(first + (long)(rand.NextDouble() * (last - first + 1)));
                 A[i] = tmp;
             }
         }
@@ -241,7 +241,7 @@ namespace Sorting
             Random rand = new Random((Int32)(DateTime.Now.Ticks + 999999100000));
             for (int i = ((3 * n) / 4); i < n; i++)
             {
-                tmp = rand.Next((Int32)first, (Int32)last);
+                tmp = (Int32)(first + (long)(rand.NextDouble() * (last - first + 1)));
                 A[i] = tmp;
             }
         }
