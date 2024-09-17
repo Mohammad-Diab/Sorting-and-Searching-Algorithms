@@ -29,8 +29,8 @@ namespace Sorting
         bool BSflag = false;
         public static bool SaveFiles = false;
         bool ViewNumber = false;
-        public static string[] ArLabels = { "خوارزميات الترتيب والبحث", "عدد الأرقام", "توليد أرقام عشوائية", "مجال الأرقام من (", ") حتى (", ")", "خوارزميات الترتيب", "خوارزميات البحث", "بحث عن:", "ترتيب بالاختيار", "ترتيب بالفقاعات", "ترتيب بالاقحام", "ترتيب بالدمج", "فرز سريع", "بحث خطي", "بحث ثنائي", "عرض الأعداد", "خيارات", "شرح البرنامج", "عن", "خيارات", "حفظ الأعداد المرتبة وغير المرتبة الى القرص الصلب.", "مجال الأعداد:", "من:", "الى:", "اللغة:", "حفظ", "الغاء", "لم تقم بتوليد أي رقم بعد!", "تم العمل خلال '", "' ميلي ثانية", "حفظ الارقام المرتبة", "حفظ الارقام الغير مرتبة", "تم", "مستند نصي ", "مربع البحث فارغ", "وجد في '", "' خلال '", "الرقم غير موجود\nزمن البحث '", "أولا يجب ترتيب الأعداد باحدى خوارزميات الترتيب", "عدد الارقام يجب ألا يتجاوز 2147483647", "عدد الارقام يجب أن يكون أكبر من 4", "البداية يجب ألا يتجاوز 2147483646", "رقم النهاية يجب ألا يتجاوز 2147483647", "البداية يجب أن يكون أكبر من 0", "النهاية يجب أن يكون أكبر من 1", "البداية يجب ان تكون أقل من النهاية", "تم الترتيب","الافتراضي", "ملف الشرح Help.ppsx غير موجود بجانب البرنامج" };
-        public static string[] EnLabels = { "Sorting & Searching Algorithms ", "Numbers count ", "Generate Random Number ", "Numbers' domain from ( ", ") to ( ", ") ", "Sorting Algorithms ", "Searching Algorithms ", "Look for ", "Selection Sort ", "Bubble Sort ", "Insertion Sort ", "Merge Sort ", "Quick Sort ", "Linear Search ", "Binary Search ", "View Numbers ", "Setting ", "Help ", "about ", "Setting ", "Save numbers to your disk. ", "Numbers' domain: ", "From: ", "To: ", "Language: ", "Save ", "Cancel ", "You haven't generated any number yet! ", "Done in ' ", "' Millisecond ", "Save Sorted Numbers ", "Save Unsorted Numbers ", "Done ", "Text documents  ", "Search box is empty! ", "Found in ' ", "' in ' ", "Number not found\ntime ' ", "Number must be sorted before binary searching ", "Numbers mustn't be more than 2147483647 ", "Numbers mustn't be less than 4 ", "First number mustn't be more than 2147483646 ", "Last number mustn't be more than 2147483647 ", "First number mustn't be less than 0 ", "Last number mustn't be less than 1 ", "Last number must be greater than the first one ", "Sorted ", "Default", "Help.ppsx wasn't found next to the program " };
+        public static string[] ArLabels = { "خوارزميات الترتيب والبحث", "عدد الأرقام", "توليد أرقام عشوائية", "مجال الأرقام من (", ") حتى (", ")", "خوارزميات الترتيب", "خوارزميات البحث", "بحث عن:", "ترتيب بالاختيار", "ترتيب بالفقاعات", "ترتيب بالاقحام", "ترتيب بالدمج", "فرز سريع", "بحث خطي", "بحث ثنائي", "عرض الأعداد", "خيارات", "شرح البرنامج", "عن", "خيارات", "حفظ الأعداد المرتبة وغير المرتبة الى القرص الصلب.", "مجال الأعداد:", "من:", "الى:", "اللغة:", "حفظ", "الغاء", "لم تقم بتوليد أي رقم بعد!", "تم العمل خلال '", "' ميلي ثانية", "حفظ الارقام المرتبة", "حفظ الارقام الغير مرتبة", "تم", "مستند نصي ", "مربع البحث فارغ", "وجد في '", "' خلال '", "الرقم غير موجود\nزمن البحث '", "أولا يجب ترتيب الأعداد باحدى خوارزميات الترتيب", "عدد الارقام يجب ألا يتجاوز 2147483647", "عدد الارقام يجب أن يكون أكبر من 4", "البداية يجب ألا يتجاوز 2147483646", "رقم النهاية يجب ألا يتجاوز 2147483647", "البداية يجب أن يكون أكبر من 0", "النهاية يجب أن يكون أكبر من 1", "البداية يجب ان تكون أقل من النهاية", "تم الترتيب","الافتراضي", "ملف الشرح Help.ppsx غير موجود بجانب البرنامج", "مربع البحث يجب أن يحتوي رقماً صحيحاً" };
+        public static string[] EnLabels = { "Sorting & Searching Algorithms ", "Numbers count ", "Generate Random Number ", "Numbers' domain from ( ", ") to ( ", ") ", "Sorting Algorithms ", "Searching Algorithms ", "Look for ", "Selection Sort ", "Bubble Sort ", "Insertion Sort ", "Merge Sort ", "Quick Sort ", "Linear Search ", "Binary Search ", "View Numbers ", "Setting ", "Help ", "about ", "Setting ", "Save numbers to your disk. ", "Numbers' domain: ", "From: ", "To: ", "Language: ", "Save ", "Cancel ", "You haven't generated any number yet! ", "Done in ' ", "' Millisecond ", "Save Sorted Numbers ", "Save Unsorted Numbers ", "Done ", "Text documents  ", "Search box is empty! ", "Found in ' ", "' in ' ", "Number not found\ntime ' ", "Number must be sorted before binary searching ", "Numbers mustn't be more than 2147483647 ", "Numbers mustn't be less than 4 ", "First number mustn't be more than 2147483646 ", "Last number mustn't be more than 2147483647 ", "First number mustn't be less than 0 ", "Last number mustn't be less than 1 ", "Last number must be greater than the first one ", "Sorted ", "Default", "Help.ppsx wasn't found next to the program ", "Search box must contain a whole number " };
         public static string[] Labels;
         public MainWindow()
         {
@@ -351,7 +351,11 @@ namespace Sorting
                 else
                 {
                     int x, i;
-                    int.TryParse(TextBox1.Text, out x);
+                    if (!int.TryParse(TextBox1.Text, out x))
+                    {
+                        MessageBox.Show(Labels[50], Labels[14], MessageBoxButton.OK, MessageBoxImage.Stop);
+                        return;
+                    }
                     long m1 = Stopwatch.GetTimestamp();
                     for (i = 0; i < n; i++)
                         if (A[i] == x)
@@ -391,7 +395,11 @@ namespace Sorting
                     else
                     {
                         int x, y;
-                        int.TryParse(TextBox1.Text, out x);
+                        if (!int.TryParse(TextBox1.Text, out x))
+                        {
+                            MessageBox.Show(Labels[50], Labels[15], MessageBoxButton.OK, MessageBoxImage.Stop);
+                            return;
+                        }
                         long m1 = Stopwatch.GetTimestamp();
                         y = Binary_Search(n, x);
                         if (y == -1)
