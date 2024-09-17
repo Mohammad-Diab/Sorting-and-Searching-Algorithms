@@ -5,7 +5,7 @@ A small Windows app that fills an array with random numbers and times the classi
 ## Features
 
 - **Generate Random Number** fills the array with the count you type, taken from the number domain set in **Setting** (0 to 1,000,000,000 by default).
-- Sorting algorithms: **Selection Sort**, **Bubble Sort**, **Insertion Sort**, **Merge Sort** and **Quick Sort**, plus **Build-in Sort** (.NET `List.Sort`) to compare against. Each one reports how many milliseconds it took.
+- Sorting algorithms: **Selection Sort**, **Bubble Sort**, **Insertion Sort**, **Merge Sort** and **Quick Sort**, plus **Built-in Sort** (.NET `List.Sort`) to compare against. Each one reports how many milliseconds it took.
 - Searching algorithms: **Linear Search** and **Binary Search** for the number in the **Look for** box, with the position and the time. Binary search needs the numbers sorted first.
 - **View Numbers** shows the array in a list next to the buttons.
 - **Setting**: the number domain (From / To), the language (Arabic or English), and an option to save the unsorted and sorted numbers to text files. **Default** restores the original settings.

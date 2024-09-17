@@ -47,6 +47,6 @@
                 <Image Source="about.png" Stretch="Uniform"/>
             </Button.Content>
         </Button>
-        <Button x:Name="button" Content="Build-in Sort" HorizontalAlignment="Left" Height="32" Margin="177,232,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="108" Click="Sort_Click"/>
+        <Button x:Name="button" Content="Built-in Sort" HorizontalAlignment="Left" Height="32" Margin="177,232,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="108" Click="Sort_Click"/>
     </Grid>
 </Window>
