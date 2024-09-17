@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Timers;
 using System.Threading;
 using System.IO;
+using System.Diagnostics;
 
 namespace Sorting
 {
@@ -43,16 +44,16 @@ namespace Sorting
                 if (SaveFiles) Write(Labels[32]);
                 int maxPos;
                 int first = 0;
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 while (first < n)
                 {
                     maxPos = Min_Select(A, n, first);
                     Swap(A, maxPos, first);
                     first++;
                 }
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
@@ -88,7 +89,7 @@ namespace Sorting
             {
                 if (SaveFiles) Write(Labels[32]);
                 bool flag = true;
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 for (int i = 0; (i < n) && flag; i++)
                 {
                     flag = false;
@@ -99,9 +100,9 @@ namespace Sorting
                             flag = true;
                         }
                 }
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
@@ -131,7 +132,7 @@ namespace Sorting
             {
                 int tmp, k;
                 if (SaveFiles) Write(Labels[32]);
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 for (int i = 1; i < n; i++)
                 {
                     k = i - 1;
@@ -143,9 +144,9 @@ namespace Sorting
                     }
                     A[k + 1] = tmp;
                 }
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
@@ -159,11 +160,11 @@ namespace Sorting
             if (A.Length > 0)
             {
                 if (SaveFiles) Write(Labels[32]);
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 Merge_Sort(A, 0, n - 1);
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
@@ -325,11 +326,11 @@ namespace Sorting
             if (A.Length > 0)
             {
                 if (SaveFiles) Write(Labels[32]);
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 Quick_Sort(A, 0, n - 1);
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
@@ -348,25 +349,25 @@ namespace Sorting
                 {
                     int x, i;
                     int.TryParse(TextBox1.Text, out x);
-                    long m1 = DateTime.Now.Ticks;
+                    long m1 = Stopwatch.GetTimestamp();
                     for (i = 0; i < n; i++)
                         if (A[i] == x)
                         {
-                            long m2 = DateTime.Now.Ticks;
+                            long m2 = Stopwatch.GetTimestamp();
                             double m = m2 - m1;
                             if (ViewNumber && i > -1)
                             {
                                 Numbers_List.SelectedIndex = i;
                                 Numbers_List.ScrollIntoView(Numbers_List.SelectedItem);
                             }
-                            MessageBox.Show(string.Concat(Labels[36], i + 1, Labels[37], (((double)m) / 10000).ToString(), Labels[30]), Labels[14], MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show(string.Concat(Labels[36], i + 1, Labels[37], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[14], MessageBoxButton.OK, MessageBoxImage.Information);
                             break;
                         }
                     if (i == n)
                     {
-                        long m2 = DateTime.Now.Ticks;
+                        long m2 = Stopwatch.GetTimestamp();
                         long m = m2 - m1;
-                        MessageBox.Show(string.Concat(Labels[38], (((double)m) / 10000).ToString(), Labels[30]), Labels[14], MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show(string.Concat(Labels[38], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[14], MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
             }
@@ -388,24 +389,24 @@ namespace Sorting
                     {
                         int x, y;
                         int.TryParse(TextBox1.Text, out x);
-                        long m1 = DateTime.Now.Ticks;
+                        long m1 = Stopwatch.GetTimestamp();
                         y = Binary_Search(n, x);
                         if (y == -1)
                         {
-                            long m2 = DateTime.Now.Ticks;
+                            long m2 = Stopwatch.GetTimestamp();
                             long m = m2 - m1;
-                            MessageBox.Show(string.Concat(Labels[38], (((double)m) / 10000).ToString(), Labels[30]), Labels[15], MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show(string.Concat(Labels[38], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[15], MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                         else
                         {
-                            long m2 = DateTime.Now.Ticks;
+                            long m2 = Stopwatch.GetTimestamp();
                             long m = m2 - m1;
                             if (ViewNumber && y > -1)
                             {
                                 Numbers_List.SelectedIndex = y;
                                 Numbers_List.ScrollIntoView(Numbers_List.SelectedItem);
                             }
-                            MessageBox.Show(string.Concat(Labels[36], y + 1, Labels[37], (((double)m) / 10000).ToString(), Labels[30]), Labels[15], MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show(string.Concat(Labels[36], y + 1, Labels[37], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[15], MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                     }
                 }
@@ -542,12 +543,12 @@ namespace Sorting
             {
                 if (SaveFiles) Write(Labels[32]);
                 var list = A.ToList();
-                long m1 = DateTime.Now.Ticks;
+                long m1 = Stopwatch.GetTimestamp();
                 list.Sort();
-                long m2 = DateTime.Now.Ticks;
+                long m2 = Stopwatch.GetTimestamp();
                 A = list.ToArray();
                 long m = m2 - m1;
-                MessageBox.Show(string.Concat(Labels[29], (((double)m) / 10000).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show(string.Concat(Labels[29], (((double)m) * 1000 / Stopwatch.Frequency).ToString(), Labels[30]), Labels[47], MessageBoxButton.OK, MessageBoxImage.Information);
                 if (SaveFiles) Write(Labels[31]);
                 if (ViewNumber) viewNumber(true);
                 BSflag = true;
